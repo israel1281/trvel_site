@@ -1,0 +1,27 @@
+.login_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    height: 100vh;
+}
+.login_input {
+    height: 2rem;
+    padding: 0.4rem;
+}
+.login_button {
+    border: none;
+    padding: 0.5rem 1rem;
+    background-color: #0071c2;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 0.2rem;
+}
+
+.login_button:disabled {
+    background-color: #0071c2c2;
+    cursor: not-allowed;
+}

@@ -1,0 +1,64 @@
+.navbar {
+  height: 80px;
+  background-color: #011632;
+  display: flex;
+  justify-content: center;
+}
+
+.navContainer {
+  width: 100%;
+
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navButton {
+  margin-left: 20px;
+  border: none;
+  color: #003580;
+  background-color: #fff;
+  font-weight: 500;
+  padding: 10px;
+  cursor: pointer;
+  height: 40px;
+  width: 100px;
+}
+.navOutline {
+  margin-left: 20px;
+  color: #ffffff;
+  border: 2px solid #fff;
+  background-color: transparent;
+  font-weight: 500;
+  padding: 10px;
+  cursor: pointer;
+  height: 40px;
+  width: 100px;
+}
+
+@media only screen and (min-width: 1201px) {
+  .navContainer {
+    max-width: 1024px;
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .navContainer {
+    max-width: 768px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .navContainer {
+    padding: 1rem;
+  }
+}

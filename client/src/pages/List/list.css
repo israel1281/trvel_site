@@ -1,0 +1,151 @@
+.listContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.listWrapper {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.listSearch {
+  flex: 1;
+  background-color: #febb02;
+  padding: 10px;
+  border-radius: 4px;
+  position: sticky;
+  top: 10px;
+  height: max-content;
+}
+
+.lsTitle {
+  font-size: 20px;
+  color: #011632;
+  margin-bottom: 10px;
+}
+
+.lsItem {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.lsItem > label {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.lsItem > input {
+  height: 35px;
+  border: none;
+  padding: 5px;
+  font-size: 1.1rem;
+  outline: none;
+}
+.lsItem > span {
+  height: 35px;
+  padding: 5px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.lsOptions {
+  padding: 10px;
+}
+
+.lsOptionItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #011632;
+  font-size: 12px;
+}
+
+.lsOptionItem > span {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.lsOptionInput {
+  width: 50px;
+  border: none;
+  padding: 0.1rem;
+  outline: none;
+}
+
+.listSearch > button {
+  padding: 10px;
+  background-color: #0071c2;
+  color: white;
+  border: none;
+  width: 100%;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.listResult {
+  flex: 3;
+}
+
+@media only screen and (min-width: 1201px) {
+  .listWrapper {
+    max-width: 1024px;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .listWrapper {
+    max-width: 768px;
+    flex-direction: column;
+  }
+
+  .listSearch {
+    position: relative;
+  }
+
+  .lsTitle {
+    font-size: 1.6rem;
+  }
+
+  .lsItem > label {
+    font-size: 1rem;
+  }
+
+  .lsItem > span {
+    font-size: 1rem;
+  }
+  .lsOptionInput {
+    width: 70px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .listWrapper {
+    max-width: 512px;
+    flex-direction: column;
+  }
+
+  .listSearch {
+    position: relative;
+  }
+
+  .lsTitle {
+    font-size: 1.6rem;
+  }
+
+  .lsItem > label {
+    font-size: 1rem;
+  }
+
+  .lsItem > span {
+    font-size: 1rem;
+  }
+  .lsOptionInput {
+    width: 70px;
+  }
+}

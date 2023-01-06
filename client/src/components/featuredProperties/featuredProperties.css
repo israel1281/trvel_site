@@ -1,0 +1,60 @@
+.fp {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.fpItem {
+  flex: 1;
+  gap: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fpImg {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.fpName {
+  color: #333;
+  font-weight: bold;
+}
+
+.fpCity {
+  font-weight: 300;
+}
+
+.fpPrice {
+  font-weight: 500;
+}
+
+.fpRating > button {
+  background-color: #003580;
+  color: white;
+  border: none;
+  padding: 3px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.fpRating > span {
+  font-size: 14px;
+}
+
+@media only screen and (min-width: 1201px) {
+  .fp {
+    max-width: 1024px;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .fp {
+    max-width: 768px;
+  }
+
+  .fpImg {
+    height: 200px;
+  }
+}
